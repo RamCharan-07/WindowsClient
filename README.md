@@ -3,9 +3,9 @@
 
 Windows
 
-gcc -o server.exe server.c -lws2_32      # compiling server.c file on cmd
+gcc -o server1.exe server1.c -lws2_32      # compiling server.c file on cmd
 
-server.exe                       # start the server or run the server
+server1.exe                       # start the server or run the server
 
 sc create SimpleTCPServer binPath= "C:\Users\s3502\Documents\virtual_box\server.exe"   # registering the server as windows service
 
@@ -15,6 +15,10 @@ sc stop SimpleTCPServer     # stop the service
 
 Linux
 
-gcc -o server server.c     # compiling server.c file on Linux terminal
+gcc -o server1 server1.c     # compiling server.c file on Linux terminal
 
- ./server             # start the daemon or run the daemon
+ ./server1             # start the daemon or run the daemon
+
+ps aux | grep server1   #check wether daemon is running or not
+
+kill <pid>   # to stop the daemon execution
