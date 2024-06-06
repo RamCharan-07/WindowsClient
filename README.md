@@ -13,6 +13,8 @@ sc start SimpleTCPServer     # start the service
 
 sc stop SimpleTCPServer     # stop the service
 
+cl /D _WIN32 server2.c ws2_32.lib Advapi32.lib  # compiling server2.c file on visual studio 2022
+
 Linux
 
 gcc -o server1 server1.c     # compiling server.c file on Linux terminal
