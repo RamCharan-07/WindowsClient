@@ -3,7 +3,7 @@
 
 Windows
 
-gcc -o server1.exe server1.c -lws2_32      # compiling server.c file on cmd
+gcc -o server1.exe server1.c -lws2_32      # compiling server1.c file on cmd(with MinGW installed)
 
 server1.exe                       # start the server or run the server
 
